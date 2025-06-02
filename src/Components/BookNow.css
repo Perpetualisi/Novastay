@@ -1,0 +1,98 @@
+.book-section {
+  padding: 3rem 1.5rem;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.book-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.book-subtext {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--muted);
+}
+
+.book-form {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .book-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.book-form input,
+.book-form select {
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: var(--input-bg);
+  color: var(--text);
+  transition: border 0.2s, background-color 0.3s;
+}
+
+.book-form input:focus,
+.book-form select:focus {
+  border-color: #007b8a;
+  outline: none;
+}
+
+.book-form button {
+  grid-column: span 2;
+  padding: 1rem;
+  background-color: #007b8a;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-form button:hover {
+  background-color: #005e6d;
+}
+
+.booking-message {
+  text-align: center;
+  margin-top: 1rem;
+  color: #007b8a;
+  font-weight: 500;
+}
+
+/* Light / Dark mode */
+:root {
+  --bg: #f8f8f8;
+  --text: #222;
+  --border: #ccc;
+  --input-bg: #fff;
+  --muted: #666;
+}
+
+body.dark-mode {
+  --bg: #121212;
+  --text: #eee;
+  --border: #444;
+  --input-bg: #1e1e1e;
+  --muted: #aaa;
+}

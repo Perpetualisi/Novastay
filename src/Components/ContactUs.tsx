@@ -9,7 +9,7 @@ const ContactUs = () => {
       <div className="contact-container">
         <div className="contact-info">
           <h3>Get in Touch</h3>
-          <p><strong>Address:</strong> 123 Palm Avenue, Lagos, Nigeria</p>
+<p><strong>Address:</strong> 123 Palm Avenue, New York, USA</p>
           <p><strong>Phone:</strong> <a href="tel:+1123456789">+112-345-6789</a></p>
           <p><strong>Email:</strong> <a href="mailto:info@novastay.com">info@novastay.com</a></p>
           

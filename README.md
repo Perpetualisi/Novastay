@@ -1,50 +1,100 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## 🏨 NovaStay – Travel & Hotel Booking Web App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 📌 **Overview**
 
-## Expanding the ESLint configuration
+NovaStay is a fully responsive travel and hotel booking web application built with **React**, **Vite**, and **TypeScript**. It offers a clean and modern UI/UX, mobile responsiveness, dark mode support, and a seamless hotel booking experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+### 🚀 **Live Demo**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+[🔗 Visit NovaStay Now](https://novastay.vercel.app/)
+
+---
+
+### 🛠️ **Built With**
+
+* ⚛️ React
+* ⚡ Vite
+* 🧠 TypeScript
+* 🎨 CSS3 (or Tailwind if added)
+* 🌓 Dark Mode Support
+* 📱 Mobile-First Responsive Design
+
+---
+
+
+
+---
+
+### 🔧 **Features**
+
+* Hotel booking form with input validation
+* Dark/Light mode toggle
+* Fully responsive across all screen sizes
+* Reusable and clean component structure
+* Beautiful transitions and modern layout
+
+---
+
+### 📁 **Project Structure**
+
+```bash
+src/
+├── assets/            # Images and icons
+├── components/        # Reusable UI components (e.g., Navbar, Footer, BookingForm)
+├── pages/             # Main pages like Home and Contact
+├── App.tsx
+├── main.tsx
+└── index.css
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### 🧪 **Getting Started**
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+#### Clone the repo
+
+```bash
+git clone https://github.com/yourusername/NovaStay.git
+cd NovaStay
 ```
+
+#### Install dependencies
+
+```bash
+npm install
+```
+
+#### Start the development server
+
+```bash
+npm run dev
+```
+
+---
+
+### 📦 **Build for production**
+
+```bash
+npm run build
+```
+
+---
+
+### 🙋‍♂️ **Author**
+
+* **Okan Perpetual Isi**
+* 📍 Lagos, Nigeria
+* 📧 [perpetualokan0@gmail.com](mailto:perpetualokan0@gmail.com)
+* 🌐 [LinkedIn](https://linkedin.com/in/yourprofile)
+* 🐦 [Twitter](https://twitter.com/yourprofile)
+
+---
+
+### 📃 **License**
+
+This project is licensed under the **MIT License**.
+

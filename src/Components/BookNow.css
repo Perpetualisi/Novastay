@@ -1,8 +1,26 @@
+:root {
+  --bg: #f8f8f8;
+  --text: #222;
+  --border: #ccc;
+  --input-bg: #fff;
+  --muted: #666;
+}
+
+body.dark-mode {
+  --bg: #121212;
+  --text: #eee;
+  --border: #444;
+  --input-bg: #1e1e1e;
+  --muted: #aaa;
+}
+
 .book-section {
-  padding: 3rem 1.5rem;
+  padding: 3rem 1rem;
   background-color: var(--bg);
   color: var(--text);
   transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .book-section h2 {
@@ -22,6 +40,7 @@
   margin: 0 auto;
   display: grid;
   gap: 1.5rem;
+  padding: 0 1rem;
 }
 
 @media (min-width: 768px) {
@@ -33,6 +52,7 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .form-group label {
@@ -42,6 +62,7 @@
 
 .book-form input,
 .book-form select {
+  width: 100%;
   padding: 0.75rem;
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -67,6 +88,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 100%;
 }
 
 .book-form button:hover {
@@ -78,21 +100,4 @@
   margin-top: 1rem;
   color: #007b8a;
   font-weight: 500;
-}
-
-/* Light / Dark mode */
-:root {
-  --bg: #f8f8f8;
-  --text: #222;
-  --border: #ccc;
-  --input-bg: #fff;
-  --muted: #666;
-}
-
-body.dark-mode {
-  --bg: #121212;
-  --text: #eee;
-  --border: #444;
-  --input-bg: #1e1e1e;
-  --muted: #aaa;
 }

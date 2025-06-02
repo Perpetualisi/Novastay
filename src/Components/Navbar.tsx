@@ -41,7 +41,11 @@ const Navbar = () => {
             className="book-btn"
             onClick={() => {
               const bookSection = document.getElementById("book");
-              bookSection?.scrollIntoView({ behavior: "smooth" });
+              if (bookSection) {
+                const yOffset = -70; 
+                const y = bookSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: "smooth" });
+              }
               setMenuOpen(false);
             }}
           >
@@ -53,11 +57,11 @@ const Navbar = () => {
           </button>
         </nav>
 
-<div className="hamburger" onClick={toggleMenu}>
-  <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
-  <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
-  <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
-</div>
+        <div className="hamburger" onClick={toggleMenu}>
+          <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
+          <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
+          <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
+        </div>
       </div>
     </header>
   );

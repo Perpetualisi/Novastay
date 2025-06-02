@@ -11,6 +11,9 @@ body.dark-mode {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   background: transparent;
 }
+section {
+  scroll-margin-top: 70px; 
+}
 
 .navbar.scrolled {
   background-color:white;

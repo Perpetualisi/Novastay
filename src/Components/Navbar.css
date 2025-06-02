@@ -103,15 +103,9 @@ body.dark-mode .nav-links a {
   margin: 4px 0;
 }
 
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  transition: transform 0.3s ease;
-}
 
 .bar.open {
-  transform: rotate(45deg);
+  transform: rotate(20deg);
 }
 
 @media (max-width: 768px) {
